@@ -1,0 +1,547 @@
+/* RESET E VARIÁVEIS DE CORES NATUREZA */
+:root {
+  --blue-dark: #1b4965;
+  --blue-medium: #2b6cb0;
+  --blue-light: #62b6cb;
+  --green-nature: #2a9d8f;
+  --green-soft: #e8f5e9;
+  --green-accent: #48bb78;
+  --text-dark: #2d3748;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  color: var(--white);
+}
+
+.logo {
+  background-color: var(--green-accent);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero-container {
+  background-color: var(--blue-light);
+  padding: 30px 40px 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background-color: var(--green-nature);
+  border-radius: 80px 40px 140px 60px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  color: var(--white);
+}
+
+.hero-text {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text .subtext {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+
+.floating-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--green-accent);
+  color: var(--white);
+  padding: 20px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* CARD INFORMATIVO SOBREPOSTO */
+.info-card-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.info-card {
+  background-color: var(--green-soft);
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.info-text {
+  flex: 2;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: var(--green-accent);
+  color: var(--white);
+  padding: 8px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.info-badge {
+  flex: 1;
+  background-color: var(--blue-medium);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* CONTEÚDO INFERIOR */
+.content-section {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.illustration-box {
+  display: flex;
+  justify-content: center;
+}
+
+.character-circle {
+  font-size: 4rem;
+  background: var(--green-soft);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.content-text h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  color: var(--blue-dark);
+}
+
+.content-text span {
+  color: var(--green-nature);
+}
+
+.content-description p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.content-description hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 15px;
+}
+
+.link-more {
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   SLIDER ESTATÍSTICO (VERDE E AZUL NATUREZA)
+   ========================================= */
+
+.slider-section {
+  background-color: var(--green-soft);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Esconde os inputs radio */
+.slider-container input[type="radio"] {
+  display: none;
+}
+
+/* Trilho do slider */
+.slides-track {
+  display: flex;
+  width: 400%; /* 4 slides = 400% */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada Slide individual */
+.slide {
+  width: 25%; /* 100% / 4 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  min-height: 220px;
+  padding: 20px;
+}
+
+/* Gráficos e Ícones */
+.slide-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ícones de Pessoas (Slide 1) */
+.icons-group {
+  gap: 10px;
+  font-size: 3.5rem;
+}
+
+.icon-person {
+  color: #a0aec0; /* Cinza suave */
+}
+
+.icon-person.highlighted {
+  color: var(--green-nature); /* Destaque verde */
+}
+
+/* Gráfico de Pizza (Slide 2) */
+.pie-chart {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(var(--green-nature) 0% 50%, #a0aec0 50% 100%);
+}
+
+/* Gráfico de Barras (Slide 3) */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  height: 140px;
+}
+
+.bar {
+  border-radius: 6px 6px 0 0;
+}
+
+.small-bar {
+  width: 50px;
+  height: 40px;
+  background-color: #a0aec0;
+}
+
+.tall-bar {
+  width: 55px;
+  height: 130px;
+  background-color: var(--green-nature);
+}
+
+/* Textos e Estatísticas */
+.slide-content {
+  max-width: 320px;
+}
+
+.big-stat {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--green-nature);
+  line-height: 1;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  color: var(--blue-dark);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Balão de Citação (Slide 4) */
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-bubble {
+  background-color: var(--green-nature);
+  color: var(--white);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.6rem;
+  padding: 25px 35px;
+  border-radius: 20px 20px 0px 20px;
+  max-width: 650px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.author-text {
+  margin-top: 15px;
+  color: var(--blue-dark);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Bolinhas de Navegação (Dots) */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Lógica de Transição dos Radios */
+#slide1:checked ~ .slides-track { transform: translateX(0%); }
+#slide2:checked ~ .slides-track { transform: translateX(-25%); }
+#slide3:checked ~ .slides-track { transform: translateX(-50%); }
+#slide4:checked ~ .slides-track { transform: translateX(-75%); }
+
+/* Destaque na bolinha ativa */
+#slide1:checked ~ .slider-dots .dot:nth-child(1),
+#slide2:checked ~ .slider-dots .dot:nth-child(2),
+#slide3:checked ~ .slider-dots .dot:nth-child(3),
+#slide4:checked ~ .slider-dots .dot:nth-child(4) {
+  background-color: var(--green-nature);
+  transform: scale(1.3);
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA DE CONTEÚDOS (VERDE E AZUL)
+   ========================================= */
+
+/* Link Ativo na Nav */
+.nav-links a.active {
+  color: var(--green-accent);
+  border-bottom: 2px solid var(--green-accent);
+}
+
+/* BANNER HERO DE CONTEÚDOS */
+.conteudos-hero {
+  background-color: var(--green-nature);
+  color: var(--white);
+  padding: 50px 40px 70px 40px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Borda inferior inclinada */
+}
+
+.conteudos-hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-title-box h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-description-box {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-description-box p {
+  margin-bottom: 12px;
+}
+
+/* SEÇÃO DE CATEGORIAS */
+.categories-section {
+  padding: 60px 40px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.categories-container {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar de Categorias */
+.categories-sidebar h2 {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--blue-dark);
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--blue-dark);
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories-sidebar .plus-icon {
+  font-size: 1.2rem;
+  color: var(--green-nature);
+}
+
+/* Grade de Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Card Individual (Link) */
+.card-item {
+  background-color: var(--green-soft);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(42, 157, 143, 0.15);
+  background-color: #d8f3dc;
+  border-color: var(--green-accent);
+}
+
+/* Ícone do Card */
+.card-icon-wrapper {
+  background-color: var(--white);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+/* Título do Card */
+.card-item h3 {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--blue-dark);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+  .conteudos-hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .categories-container {
+    grid-template-columns: 1fr;
+  }
+}
